@@ -1,0 +1,16 @@
+spring: 
+ profiles: 
+  actice: 
+   - dev
+
+---
+spring:    #开发环境
+ profiles: dev
+ application: 
+  name: microservicecloud-config-humy-dev
+
+---
+spring:     #测试环境
+ profiles: test
+ application: 
+  name: microservicecloud-config-humy-test
